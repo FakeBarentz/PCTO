@@ -1,4 +1,4 @@
-#include <stab.h>
+#include <stdio.h>
 
 int main()
 {
@@ -9,16 +9,28 @@ int main()
     scanf("%d", &anno1);
     if (anno1 == 1969)
     {
-        printf("Sei nato nello stesso anno dell'atterraggio sulla Luna");
+        printf("Sei nato nello stesso anno dell'atterraggio sulla Luna\n");
     }
-    else if (anno1 > 1969)
+    else
     {
-        printf("Sei nato dopo dell'atterraggio sulla Luna");
-        anno2 = anno1 -1969
+        printf("Non sei nato nello stesso anno dell'atterraggio sulla Luna\n");
     }
-    if ()
+    if (anno1 > 1969)
     {
-        printf("Sei nato prima dell'atterraggio sulla Luna");
+        printf("Sei nato dopo dell'atterraggio sulla Luna\n");
     }
+    else
+    {
+        printf("Non sei nato dopo dell'atterraggio sulla Luna\n");
+    }
+    if (anno1 < 1969);
+    {
+        printf("Sei nato prima dell'atterraggio sulla Luna\n");
+    }
+    else
+    {
+        printf("Non sei nato prima dell'atterraggio sulla Luna\n");
+    }
+    return(0);
 
 }
