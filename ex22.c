@@ -4,38 +4,40 @@ void tuMadre()
 {
     int x;
     int y;
-    int somma;
-    int sottrazione;
-    int moltiplicazione;
-    int divisione;
+    int operatore;
 
-    printf("Scegli l'operazione (+,-,*,/) ed inserisci 2 numeri: ");
-    scanf("%d", &x);
-    scanf("%d", &y);
+        printf("Scegli il primo numero: ");
+        scanf("%d", &x);
+        printf("Scegli il secondo numero: ");
+        scanf("%d", &y);
+        printf("Scegli l'operazione che desideri svolgere:\n");
+        printf("1 per +\n");
+        printf("2 per -\n");
+        printf("3 per *\n");
+        printf("4 per /\n");
+        scanf("%d", &operatore);
 
-    if('+')
+
+    if(operatore == 1)
     {
-        printf("Il risultato è: %d\n", somma);
-        somma = x+y;
+        printf("Il risultato è: %d\n", (x + y));
     }
-    else if('-')
+    else if(operatore == 2)
     {
-        printf("Il risultato è: %d\n", sottrazione);
-        sottrazione = x-y;
+        printf("Il risultato è: %d\n", (x - y));
     }
-    else if('*')
+    else if(operatore == 3)
     {
-        printf("Il risultato è: %d\n", moltiplicazione);
-        moltiplicazione = x*y;
+        printf("Il risultato è: %d\n", (x * y));
     }
-    else if('/')
+    else if(operatore == 4)
     {
-        printf("Il risultato è: %d\n", divisione);
-        divisione = x/y;
+        printf("Il risultato è: %d\n", (x / y));
     }
 }
 
 int main()
 {
     tuMadre();
+    return 0;
 }
