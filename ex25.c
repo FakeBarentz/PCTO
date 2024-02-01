@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int perimetro(int a, int b, int c)
 {
@@ -9,12 +10,20 @@ int perimetro(int a, int b, int c)
     return(perimetro);
 }
 
+int area(int a, int b, int c, int p)
+{
+    int area;
+
+    area = sqrt((p)*(p-a)*(p-b)*(p-c));
+}
+
 int main()
 {
     int x;
     int y;
     int z;
     int p;
+    int a;
 
     printf("Inserisci 3 misure\n");
     printf("Prima misura: ");
@@ -24,8 +33,11 @@ int main()
     printf("Terza misura:");
     scanf("%d", &z);
     
-    p = perimetro;
-    printf("Il perimetro sarà di: %d", p);
+    p = perimetro(x, y, z);
+    printf("Perimetro: %d\n", p);
+
+    a = area(x, y, z, p);
+    printf("Area: %d\n", a);
 
     return 0;
 }

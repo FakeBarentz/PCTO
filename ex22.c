@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void tuMadre()
+void calcolatrice()
 {
     int x;
     int y;
@@ -38,6 +38,6 @@ void tuMadre()
 
 int main()
 {
-    tuMadre();
+    calcolatrice();
     return 0;
 }
