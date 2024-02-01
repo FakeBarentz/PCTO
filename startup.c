@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int docente()
 {
@@ -55,6 +56,7 @@ int studente()
     float x;
     float y;
     float operatore;
+    float quadrato;
     char selezione = '0';  
     while(selezione == '0')
     {
@@ -80,34 +82,61 @@ int studente()
                 }
                 else if(selezione2 == '3')
                 {
-
-                    printf("\nScegli il primo numero: ");
-                    scanf("%f", &x);
-                    printf("Scegli il secondo numero: ");
-                    scanf("%f", &y);
                     printf("Scegli l'operazione che desideri svolgere:\n");
                     printf("\n1) Somma\n");
                     printf("2) Sottrazione\n");
                     printf("3) Moltiplicazione\n");
-                    printf("4) Divisione\n\n"); //(DA AGGIUSTARE:NON FA I CALCOLI NEGATIVI)
+                    printf("4) Divisione\n");//(DA AGGIUSTARE:NON FA I CALCOLI NEGATIVI)
+                    printf("5) Quadrato di un numero\n");
+                    printf("6) Radice di un numero\n\n");
                     scanf("%f", &operatore);
-
-
+                    
+                    
                     if(operatore == 1)
                     {
+                        printf("\nScegli il primo numero: ");
+                        scanf("%f", &x);
+                        printf("Scegli il secondo numero: ");
+                        scanf("%f", &y);
                         printf("\nIl risultato è: %.2f\n", (x + y));
                     }
                     else if(operatore == 2)
                     {
+                        printf("\nScegli il primo numero: ");
+                        scanf("%f", &x);
+                        printf("Scegli il secondo numero: ");
+                        scanf("%f", &y);
                         printf("\nIl risultato è: %.2f\n", (x - y));
                     }
                     else if(operatore == 3)
                     {
+                        printf("\nScegli il primo numero: ");
+                        scanf("%f", &x);
+                        printf("Scegli il secondo numero: ");
+                        scanf("%f", &y);
                         printf("\nIl risultato è: %.2f\n", (x * y));
                     }
                     else if(operatore == 4)
                     {
+                        printf("\nScegli il primo numero: ");
+                        scanf("%f", &x);
+                        printf("Scegli il secondo numero: ");
+                        scanf("%f", &y);
                         printf("\nIl risultato è: %.2f\n", (x / y));
+                    }
+                    else if(operatore == 5)
+                    {
+                        printf("\nInserisci un numero: ");
+                        scanf("%f", &x);
+                        quadrato = x * x;
+                        printf("Il cubo di %2.f è: %.2f\n", x, quadrato);
+                    }
+                    else if(operatore == 6)
+                    {
+                        printf("\nInserisci un numero: ");
+                        scanf("%f", &x);
+                        sqrt(x);
+                        printf("La radice di %.2f è: %.2f\n", x, sqrt(x));
                     }
 
                 }   
