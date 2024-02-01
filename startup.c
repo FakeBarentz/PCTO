@@ -82,7 +82,7 @@ int studente()
                 }
                 else if(selezione2 == '3')
                 {
-                    printf("Scegli l'operazione che desideri svolgere:\n");
+                    printf("\nScegli l'operazione che desideri svolgere:\n");
                     printf("\n1) Somma\n");
                     printf("2) Sottrazione\n");
                     printf("3) Moltiplicazione\n");
